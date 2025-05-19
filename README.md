@@ -1,98 +1,108 @@
-# Next.js 15 Starter (TailwindCSS v4)
+# Job Listings with Filtering
 
-Welcome to the **Next.js 15 Starter** repository! This starter template is built with Next.js 15, React 19, TypeScript 5, Tailwind CSS 4 and comes packed with several powerful tools and configurations to accelerate your project setup and streamline development workflows using VS Code.
+![Job Listings App Screenshot](./design/desktop-preview.jpg)
 
-## 🚀 What's Included
+## Overview
 
-- **Next.js 15**
-- **React 19**
-- **TypeScript 5**
-- **ESLint 9**
-- **Prettier 3**
-- **Tailwind CSS 4**
-- **App Directory**
-- **Dockerfile** with Node.js 22.15.0 (Alpine)
-- **Dockerfile.bun** with Bun 1.2.10 (Alpine)
+This is a solution to the [Job Listings with Filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). The application allows users to filter job listings by various categories like role, level, languages, and tools. It features a responsive design, dark mode support, and accessibility enhancements.
 
-### 🛠️ ESLint Plugins
+## 🚀 Features
 
-- [**@eslint/js**](https://www.npmjs.com/package/@eslint/js)
-- [**typescript-eslint**](https://github.com/typescript-eslint/typescript-eslint)
-- [**eslint-plugin-react**](https://github.com/jsx-eslint/eslint-plugin-react)
-- [**@next/eslint-plugin-next**](https://github.com/vercel/next.js)
-- [**eslint-config-prettier**](eslint-config-prettier)
-- [**eslint-plugin-tailwindcss**](https://github.com/francoismassart/eslint-plugin-tailwindcss) // NOT USED SINCE ITS NOT SUPPORTED ON V4
-- [**eslint-plugin-import**](https://github.com/import-js/eslint-plugin-import)
-- [**eslint-plugin-promise**](https://github.com/eslint-community/eslint-plugin-promise)
+- **Filter job listings** by clicking on tags
+- **Clear filters** individually or all at once
+- **Dark mode toggle** that remembers user preferences
+- **Responsive design** for mobile and desktop
+- **Accessibility features** including keyboard navigation and screen reader support
+- **Smooth transitions** between light and dark modes
 
-### ✨ Prettier Plugins
+## 💻 Tech Stack
 
-- [**@trivago/prettier-plugin-sort-imports**](https://github.com/trivago/prettier-plugin-sort-imports)
-- [**prettier-plugin-tailwindcss**](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
+- **Next.js 15** - React framework with App Router
+- **React 19** - UI library
+- **TypeScript 5** - Type safety
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **ESLint 9** - Code linting
+- **Prettier 3** - Code formatting
 
-### 💻 VS Code Extensions (Recommended)
+## 🔧 Installation & Setup
 
-To enhance development experience, install the following VS Code extensions:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/samuelsmith442/job-listing.git
+   cd job-listing
+   ```
 
-- [**Auto Close Tag**](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-- [**Better Comments**](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-- [**DotENV**](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
-- [**EditorConfig for VS Code**](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-- [**ESLint**](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [**formate: CSS/LESS/SCSS formatter**](https://marketplace.visualstudio.com/items?itemName=MikeBovenlander.formate)
-- [**Git History**](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
-- [**Import Cost**](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
-- [**JavaScript Booster**](https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster)
-- [**npm Intellisense**](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
-- [**Prettier - Code formatter**](https://marketplace.visualstudio.com/items?itemName=esbenp)
-- [**Todo Tree**](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
-- [**Turbo Console Log**](https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log)
-- [**Package Json Upgrade**](https://marketplace.visualstudio.com/items?itemName=codeandstuff.package-json-upgrade)
-- [**Visual Studio Code Commitizen Support**](https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-commitizen)
-- [**Markdown All in One**](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-## 🏁 Getting Started
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the application
 
-### Prerequisites
+## 🎮 Usage
 
-- **Node.js**: Version 20.18.0 or higher
+- **Filter jobs**: Click on any tag (role, level, language, or tool) to filter job listings
+- **Remove filters**: Click the X button next to any active filter to remove it
+- **Clear all filters**: Click the "Clear" button to remove all active filters
+- **Toggle dark mode**: Click the sun/moon icon in the top-right corner to switch between light and dark modes
+- **Keyboard navigation**: Use Tab to navigate through interactive elements and Enter to activate them
 
-### Installation
+## 📱 Responsive Design
 
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/officiallerio/nextjs-15-starter-tailwindcss-v4.git
-    cd nextjs-15-starter-tailwindcss-v4
-    ```
+The application is fully responsive and optimized for:
+- Mobile devices (375px and up)
+- Tablets (768px and up)
+- Desktops (1024px and up)
 
-2. **Install Dependencies**:
-    ```bash
-    npm install
-    # or with Yarn
-    yarn install
-    ```
+## ♿ Accessibility Features
 
-3. **Run Development Server**:
-    ```bash
-    npm run dev
-    # or with Yarn
-    yarn dev
-    ```
+- Semantic HTML structure
+- ARIA attributes for screen readers
+- Keyboard navigation support
+- Skip-to-content link
+- Sufficient color contrast in both light and dark modes
+- Focus indicators for keyboard users
 
-4. **Build for Production**:
-    ```bash
-    npm run build
-    ```
+## 🧪 Future Improvements
 
-### 🐳 Docker Setup
+- Add search functionality
+- Implement sorting options
+- Add pagination for large datasets
+- Create a favorites/bookmarks feature
+- Add filter suggestions based on popular tags
 
-To use Docker, make sure Docker is installed on your machine. Then, build and run the Docker container:
+## 🛠️ Development Tools
 
-```bash
-docker build . -t nextjs-15-starter-tailwindcss-v4
-# or if using Bun
-docker build . -t nextjs-15-starter-tailwindcss-v4 -f Dockerfile.bun
+### ESLint Plugins
+- `@typescript-eslint`
+- `eslint-plugin-import`
+- `eslint-plugin-jsx-a11y`
+- `eslint-plugin-react`
+- `eslint-plugin-react-hooks`
 
-docker run -p 3000:3000 nextjs-15-starter-tailwindcss-v4
-```
+### VS Code Extensions
+- `ESLint`
+- `Prettier`
+- `Tailwind CSS IntelliSense`
+- `PostCSS Language Support`
+
+## 📚 Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt)
+
+## 👨‍💻 Author
+
+- GitHub - [samuelsmith442](https://github.com/samuelsmith442)
+- Frontend Mentor - [@samuelsmith442](https://www.frontendmentor.io/profile/samuelsmith442)
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).

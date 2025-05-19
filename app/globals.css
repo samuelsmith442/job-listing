@@ -6,6 +6,21 @@
 :root {
   --background: hsl(180, 52%, 96%);
   --foreground: hsl(180, 14%, 20%);
+  --primary: hsl(180, 29%, 50%);
+  --primary-light: hsl(180, 29%, 90%);
+  --primary-dark: hsl(180, 29%, 40%);
+  --dark-cyan: hsl(180, 8%, 52%);
+  --light-cyan-filter: hsl(180, 31%, 95%);
+  --very-dark-cyan: hsl(180, 14%, 20%);
+  
+  /* Transition settings */
+  --transition-duration: 0.3s;
+  --transition-timing: ease-in-out;
+}
+
+.dark {
+  --background: hsl(210, 30%, 8%);
+  --foreground: hsl(0, 0%, 100%);
 }
 
 body {
@@ -14,4 +29,23 @@ body {
   font-family: 'League Spartan', sans-serif;
   font-size: 15px;
   font-weight: 500;
+  transition: background-color var(--transition-duration) var(--transition-timing),
+              color var(--transition-duration) var(--transition-timing);
+}
+
+/* Accessibility improvements */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Skip link for keyboard users */
+.sr-only:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: absolute;
+  white-space: nowrap;
+  width: auto;
 }

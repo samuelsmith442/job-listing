@@ -2,6 +2,10 @@
   "name": "job-listings",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0",
+    "npm": ">=10.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -54,8 +58,5 @@
       "prettier --write",
       "eslint --fix"
     ]
-  },
-  "engines": {
-    "node": ">=18.17.0"
   }
 }
